@@ -3,6 +3,8 @@ const { PORT = 5000 } = process.env;
 const app = require("./app");
 const knex = require("./db/connection");
 
+console.log("done with US-01!");
+
 knex.migrate
   .latest()
   .then((migrations) => {
